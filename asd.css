@@ -1,21 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     }
     
     
-    body {
-        width: 100%;
-        min-height: 100vh;
-        background: url('kepek/feher.jpg') no-repeat center;
-        background-size: cover;
+    html ,body {
+        margin:0; /* remove default margin */
+    padding:0; /* remove default padding */
+width:100vw; /* take full browser width */
+height:100%; /* take full browser height*/
+
+
+       background-color: red;
         color: #333;
-        font-family: 'Anton', sans-serif;  
+        font-family: 'Anton', sans-serif; 
+        display: block; 
     }
     
     h1{
-    font-stretch: semi-expanded;
     color: rgba(0, 0, 0, 0.692);
     }
     
@@ -65,39 +67,18 @@ img{
     font-size: 50px;
     margin: 10%;
     }
+
+.container{
+width: 100%;
+padding: 0;
+margin: 0;
+}
     
     
-    
-    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){body        /* Styles */
-        }
-        
-        @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-        /* Styles */
-        }
-        
-        /* Samsung Galaxy S3 ----------- */
-        @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-        /* Styles */
-        }
-        
-        @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-        /* Styles */
-        }
-        
-        /* Samsung Galaxy S4 ----------- */
-        @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-        /* Styles */
-        }
-        
-        @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-        /* Styles */
-        }
-        
-        /* Samsung Galaxy S5 ----------- */
-        @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-        /* Styles */
-        }
-        
-        @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-        /* Styles */
-        }
+    @media all and(max-width:480px) {
+        .container{
+         width: 100%;
+         padding: 0;
+         margin: 0;}
+
+    }
