@@ -8,7 +8,7 @@
         margin:0; /* remove default margin */
     padding:0; /* remove default padding */
 width:100vw; /* take full browser width */
-height:100%; /* take full browser height*/
+height:100vh; /* take full browser height*/
 
 
        background-color: red;
@@ -75,7 +75,7 @@ margin: 0;
 }
     
     
-    @media all and(max-width:480px) {
+    @media all and(min-width:480px) {
         .container{
          width: 100%;
          padding: 0;
