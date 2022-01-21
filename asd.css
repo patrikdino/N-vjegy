@@ -131,7 +131,7 @@ img:hover {
 
 
 
-        @media screen and (min-width: 300px) and (max-width: 900px) {
+        @media screen and (min-width: 200px) and (max-width: 900px) {
             .doboz{
                 display: flex;
                 align-items: center;
